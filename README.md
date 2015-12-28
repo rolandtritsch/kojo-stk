@@ -1,2 +1,1 @@
-# kojo-stk
-The Kojo Code for the Programming Course at St. Killians
+# The Kojo Code for the Programming Course at St. Killians
