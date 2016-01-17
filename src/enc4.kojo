@@ -1,6 +1,6 @@
-val alphabet = "abcdefghijklmnopqrstuvwxyz ."
+val alphabet = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ .!?"
 
-val input = "roland rocks."
+val input = "Gillian is here!"
 
 def encrypt(text: String, key: Int): String = {
     var output = ""
