@@ -37,6 +37,4 @@ while(tryKey < 10 && !done) {
 }
 
 println("Found key: " + key)
-
 println(input + " -> " + decrypt(input, key)) 
-

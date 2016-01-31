@@ -1,6 +1,7 @@
 val alphabet = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ .!?"
 
-val input = "Lnqqnfs1nx1mjwj3"
+val input = "Gillian is here!"
+val key = 66
 
 def decrypt(text: String, key: Int): String = {
     var output = ""
@@ -21,6 +22,10 @@ def decrypt(text: String, key: Int): String = {
     output
 }
 
-val decrypted = decrypt(input, 5)
+println("Size of the alphabet: " + alphabet.size)
+if(key < 0 || key > alphabet.size) {
+    println("Key out of range [0 .. alphabet.size]")
+} else {
+    println(input + " -> " + decrypt(input, key))    
+}
 
-println(input + " -> " + decrypted)
