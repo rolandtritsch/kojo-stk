@@ -1,7 +1,7 @@
 val alphabet = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ .!?"
 
-val input = "Gillian is here!"
-val key = 66
+val input = "the"
+val key = 55
 
 def encrypt(text: String, key: Int): String = {
     var output = ""

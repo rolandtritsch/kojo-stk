@@ -1,9 +1,9 @@
 val alphabet = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ .!?"
 
-val input = "Lnqqnfs1nx1mjwj3"
+val input = "p2?bP7hP63g3R"
 
 val keyWord = "the"
-val keyWordEncrypted = "ymj"
+val keyWordEncrypted = "i63"
 
 def decrypt(text: String, key: Int): String = {
     var output = ""
@@ -27,7 +27,7 @@ def decrypt(text: String, key: Int): String = {
 var key = 0
 var tryKey = 0
 var done = false
-while(tryKey < 10 && !done) {
+while(tryKey < alphabet.size && !done) {
     if(keyWord == decrypt(keyWordEncrypted, tryKey)) {
         key = tryKey
         done = true        
